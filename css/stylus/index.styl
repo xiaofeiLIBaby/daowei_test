@@ -1,0 +1,239 @@
+//头部样式
+#headNav-wraper
+  height 130px
+  background #F1F1F1
+  .typeArea-head
+    background #F1F1F1
+    font-size 16px
+    font-weight bold
+    height 40px
+    display flex
+    justify-content space-between
+    line-height 40px
+    .navLeft
+      &:hover
+        background white
+      .toggle
+        color dimgray
+    .navRight
+      ul
+        display flex
+        li
+          &:hover
+            background white
+          a
+            padding 0 15px
+            color #333
+            transition color 1s
+            &:hover
+              color #E72B2F
+    .active
+      color darkred
+  // 头部logo和search区域
+  .logoSearchWrap
+    background white
+    height 90px
+    .leftSection
+      width 280px
+      height 90px
+      float left
+      a
+        height 90px
+        line-height 90px
+        box-sizing border-box
+        padding 25px 0
+      img
+        width 100%
+        vertical-align middle
+    .middleSection
+      position relative
+      float left
+      margin 28px 46px
+      input
+        width 417px
+        height 30px
+        border 2px solid #E72B2F
+        padding 2px 30px
+        border-radius 10px
+      .search
+        position absolute
+        top 0
+        right 0
+        width 120px
+        height 36px
+        background #E72B2F
+        border-radius 0 10px 10px 0
+        color white
+        text-align center
+        line-height 36px
+        font-size 16px
+    .rightSection
+      position relative
+      float right
+      width 90px
+      height 90px
+      border 1px solid #ccc
+      img
+        position absolute
+        top 0
+        width 100%
+        z-index 100
+      span
+        display block
+        border 1px solid #ccc
+        width 12px
+        height 12px
+        position absolute
+        top -5px
+        left 40px
+        background #fff
+        -webkit-transform rotate(45deg)
+        box-sizing border-box
+
+//中间部分开始
+#middle-section-wraper
+  //轮播图区域
+  .banner-container
+    background #eee
+    position relative
+    width 100%
+    height 300px
+    overflow hidden
+    .bannerList
+      width 6000px
+      float left
+      height 300px
+      li
+        float left
+        width 1349px
+        img
+          width 100%
+
+    aside
+      position absolute
+      top 0px
+      left 100px
+      .asideNav
+        width 180px
+        height 300px
+        background rgba(0,0,0,.6)
+        li
+          a
+            font-weight bold
+            width 180px
+            height 30px
+            box-sizing border-box
+            padding 20px
+            color white
+            font-size 16px
+            span
+              margin-left 40px
+              font-size 18px
+
+
+
+
+//  家庭保洁
+  .familyServe
+    width 100%
+    height 560px
+    padding  20px 0
+    .title
+      position relative
+      height 71px
+      text-align center
+      margin-bottom 20px
+      h3
+        height 31px
+        font-size 28px
+        color #3d3838
+        font-weight bold
+      p
+        font-weight lighter
+        height 25px
+        font-size 24px
+        color #3d3838
+        margin-top 15px
+      span
+        color #ccc
+        position absolute
+        font-size 20px
+        top 44px
+        right 20px
+
+
+    .details
+      ul
+        width 100%
+        height 345px
+        box-sizing border-box
+        color #333
+        display flex
+        li
+          box-sizing border-box
+          width 230px
+          height 345px
+          padding 10px
+          border 1px solid #eaeaea
+          margin 0 5px
+          background #fff
+          cursor pointer
+          img
+            width 210px
+            height 210px
+          h4
+            box-sizing border-box
+            font-size 16px
+            padding 10px 0
+            font-weight 800
+          p
+            box-sizing border-box
+            color #929292
+            overflow hidden
+            text-overflow ellipsis
+            display -webkit-box
+            -webkit-line-clamp 2
+            -webkit-box-orient vertical
+            word-break break-all
+            font-size 13px
+            line-height 18px
+            height 58px
+          .span1
+            color red
+            font-size 18px
+            font-weight bold
+            margin-right -2px
+          .span2
+            color red
+            font-size 14px
+            font-weight bold
+          button
+            float right
+            font-size 14px
+            border-radius 4px
+            color white
+            width 76px
+            height 24px
+            background #FB474F
+            border none
+            outline none
+
+
+
+
+    .shopkeeper
+      height 86px
+      width 100%
+      border 1px solid #eaeaea
+      margin-top 20px
+      ul
+        display flex
+        flex-wrap wrap
+        li
+          a
+            box-sizing border-box
+            padding 10px 0
+            margin 0 10px
+
+
+
