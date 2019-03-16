@@ -1,0 +1,24 @@
+{
+  "name": "daowei_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaofeiLIBaby/daowei_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaofeiLIBaby/daowei_test/issues"
+  },
+  "homepage": "https://github.com/xiaofeiLIBaby/daowei_test#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "swiper": "^4.5.0",
+    "template": "^0.17.5"
+  }
+}

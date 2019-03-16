@@ -1,0 +1,26 @@
+<div class="title clearFix">
+    <div>
+    <!--title部分-->
+        <h3>{{serviceIndex}}</h3>
+        <div class="tt clearFix">
+        {{each serviceType as value i}}
+        <span>{{value}}</span>
+        {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="details">
+<ul>
+    {{each shopList as value i}}
+    <li>
+        <img src="{{value.imgUrl}}">
+        <h4>{{value.serviceName}}</h4>
+        <p>{{value.description}}</p>
+        <span class="span1">{{value.price}}</span>
+        <span class="span2">元/小时</span>
+        <button>查看详情</button>
+    </li>
+    {{/each}}
+</ul>
+</div>

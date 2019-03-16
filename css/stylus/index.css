@@ -2,6 +2,14 @@
   height: 130px;
   background: #f1f1f1;
 }
+#headNav-wraper.headerscroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f1f1f1;
+  z-index: 10000;
+}
 #headNav-wraper .typeArea-head {
   background: #f1f1f1;
   font-size: 16px;
@@ -111,7 +119,9 @@
   overflow: hidden;
 }
 #middle-section-wraper .banner-container .bannerList {
-  width: 6000px;
+  position: absolute;
+  top: 0;
+  left: 0;
   float: left;
   height: 300px;
 }
@@ -126,6 +136,10 @@
   position: absolute;
   top: 0px;
   left: 100px;
+  z-index: 2000;
+}
+#middle-section-wraper .banner-container aside:hover .aside2 {
+  display: block;
 }
 #middle-section-wraper .banner-container aside .asideNav {
   width: 180px;
@@ -137,7 +151,7 @@
   width: 180px;
   height: 30px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 7px 28px;
   color: #fff;
   font-size: 16px;
 }
@@ -145,45 +159,75 @@
   margin-left: 40px;
   font-size: 18px;
 }
-.familyServe {
+#middle-section-wraper .banner-container aside .asideNav li:hover {
+  background: rgba(0,0,0,0.8);
+  color: #e72b2f;
+}
+#middle-section-wraper .banner-container aside .aside2 {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 180px;
+  z-index: 2000;
+}
+#middle-section-wraper .banner-container aside .aside2 .asideNav2 {
+  width: 150px;
+  height: 300px;
+  background: #fff;
+}
+#middle-section-wraper .banner-container aside .aside2 .asideNav2 li a {
+  width: 150px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 7px 28px;
+  color: #000;
+  font-size: 14px;
+}
+#middle-section-wraper .banner-container aside .aside2 .asideNav2 li a span {
+  margin-left: 40px;
+  font-size: 18px;
+}
+#middle-section-wraper .banner-container aside .aside2 .asideNav2 li:hover a {
+  color: #e72b2f;
+}
+#middle-section-wraper .familyServe {
   width: 100%;
   height: 560px;
   padding: 20px 0;
 }
-.familyServe .title {
+#middle-section-wraper .familyServe .title {
+  margin-top: 30px;
   position: relative;
   height: 71px;
   text-align: center;
   margin-bottom: 20px;
 }
-.familyServe .title h3 {
+#middle-section-wraper .familyServe .title h3 {
   height: 31px;
   font-size: 28px;
   color: #3d3838;
   font-weight: bold;
 }
-.familyServe .title p {
+#middle-section-wraper .familyServe .title .tt {
+  float: left;
+  margin-left: 250px;
+  margin-top: 10px;
+}
+#middle-section-wraper .familyServe .title .tt span {
+  margin-left: 20px;
+  float: left;
   font-weight: lighter;
-  height: 25px;
-  font-size: 24px;
-  color: #3d3838;
-  margin-top: 15px;
-}
-.familyServe .title span {
-  color: #ccc;
-  position: absolute;
   font-size: 20px;
-  top: 44px;
-  right: 20px;
+  color: #3d3838;
 }
-.familyServe .details ul {
+#middle-section-wraper .familyServe .details ul {
   width: 100%;
   height: 345px;
   box-sizing: border-box;
   color: #333;
   display: flex;
 }
-.familyServe .details ul li {
+#middle-section-wraper .familyServe .details ul li {
   box-sizing: border-box;
   width: 230px;
   height: 345px;
@@ -193,17 +237,17 @@
   background: #fff;
   cursor: pointer;
 }
-.familyServe .details ul li img {
+#middle-section-wraper .familyServe .details ul li img {
   width: 210px;
   height: 210px;
 }
-.familyServe .details ul li h4 {
+#middle-section-wraper .familyServe .details ul li h4 {
   box-sizing: border-box;
   font-size: 16px;
   padding: 10px 0;
   font-weight: 800;
 }
-.familyServe .details ul li p {
+#middle-section-wraper .familyServe .details ul li p {
   box-sizing: border-box;
   color: #929292;
   overflow: hidden;
@@ -216,18 +260,18 @@
   line-height: 18px;
   height: 58px;
 }
-.familyServe .details ul li .span1 {
+#middle-section-wraper .familyServe .details ul li .span1 {
   color: #f00;
   font-size: 18px;
   font-weight: bold;
   margin-right: -2px;
 }
-.familyServe .details ul li .span2 {
+#middle-section-wraper .familyServe .details ul li .span2 {
   color: #f00;
   font-size: 14px;
   font-weight: bold;
 }
-.familyServe .details ul li button {
+#middle-section-wraper .familyServe .details ul li button {
   float: right;
   font-size: 14px;
   border-radius: 4px;
@@ -238,17 +282,17 @@
   border: none;
   outline: none;
 }
-.familyServe .shopkeeper {
+#middle-section-wraper .familyServe .shopkeeper {
   height: 86px;
   width: 100%;
   border: 1px solid #eaeaea;
   margin-top: 20px;
 }
-.familyServe .shopkeeper ul {
+#middle-section-wraper .familyServe .shopkeeper ul {
   display: flex;
   flex-wrap: wrap;
 }
-.familyServe .shopkeeper ul li a {
+#middle-section-wraper .familyServe .shopkeeper ul li a {
   box-sizing: border-box;
   padding: 10px 0;
   margin: 0 10px;
